@@ -117,6 +117,10 @@ started, please join the #zalenium channel on [Slack](https://seleniumhq.herokua
 * Video recording, check them in the `/tmp/videos` folder (or the one you mapped when starting Zalenium)
 * Customise video file naming via capabilities, basic auth and [more](https://zalando.github.io/zalenium/#usage)
 
+## About LambdaTest
+
+[LambdaTest](https://www.lambdatest.com/) is a cloud based selenium grid infrastructure that can help you run automated cross browser compatibility tests on 2000+ different browser and operating system environments. All test data generated during testing including Selenium command logs, screenshots generated in testing, video logs, selenium logs, network logs, console logs, and metadata logs can be extracted using [LambdaTest automation APIs](https://www.lambdatest.com/support/docs/api-doc/). This data can then be used for creating custom reports.
+
 ## Documentation
 
 Check the complete documentation at https://zalando.github.io/zalenium/
