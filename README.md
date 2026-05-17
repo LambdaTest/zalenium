@@ -3,8 +3,7 @@
 
 </p>
 
-[![Build Status](https://travis-ci.org/zalando/zalenium.svg?branch=master)](https://travis-ci.org/zalando/zalenium)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c719a14f5537488b8fb95d70e27acd5f)](https://www.codacy.com/app/diemol_zalenium/zalenium?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zalando/zalenium&amp;utm_campaign=Badge_Grade)
+
 [![codecov](https://codecov.io/gh/zalando/zalenium/branch/master/graph/badge.svg)](https://codecov.io/gh/zalando/zalenium)
 [![GitHub release](https://img.shields.io/github/release/zalando/zalenium.svg)](https://github.com/zalando/zalenium/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/dosel/zalenium.svg)](https://hub.docker.com/r/dosel/zalenium/tags/)
@@ -12,20 +11,16 @@
 
 
 
-
-
 This is a Selenium Grid extension to scale your local grid dynamically with docker containers. It uses
 [docker-selenium](https://github.com/elgalu/docker-selenium) to run your tests in Firefox and Chrome locally, if you
-need a different browser, your tests can get redirected to a cloud testing provider ([Sauce Labs](https://saucelabs.com/), 
-[BrowserStack](https://www.browserstack.com/), [TestingBot](https://testingbot.com/), [CrossBrowserTesting](https://crossbrowsertesting.com/)). Zalenium also works out of the box
-in [Kubernetes](https://zalando.github.io/zalenium/#kubernetes).
+need a different browser, your tests can get redirected to a cloud testing provider like TestMu AI (Formerly LambdaTest).
 
 Zalenium's maintainers add new features regularly. We invite you to test it, report bugs, suggest any ideas you may
 have, and contribute. See our [contributing guidelines](https://zalando.github.io/zalenium/#contributing) for more details.
 
 ### Why?
 
-> Thanks for open sourcing this. Our test suite run time has dropped from more than an hour to six minutes. — [@TKueck](https://twitter.com/Tkueck/status/887425829273088000)
+> Thanks for open-sourcing this. Our test suite run time has dropped from more than an hour to six minutes. — [@TKueck](https://twitter.com/Tkueck/status/887425829273088000)
 
 We know how complicated it is to:
 * Have a stable grid to run UI tests with Selenium
@@ -35,10 +30,6 @@ We know how complicated it is to:
 That is why we took this approach where [docker-selenium](https://github.com/elgalu/docker-selenium) nodes are
 created on demand. Your UI tests in Firefox and Chrome will run faster because they are running on a local grid,
 on a node created from scratch and disposed after the test completes.
-
-If you need a capability that cannot be fulfilled by [docker-selenium](https://github.com/elgalu/docker-selenium),
-the test gets redirected to a cloud testing provider ([Sauce Labs](https://saucelabs.com/),
-[BrowserStack](https://www.browserstack.com/), [TestingBot](https://testingbot.com/), [CrossBrowserTesting](https://crossbrowsertesting.com/)).
 
 Zalenium's main goal is: to allow anyone to have a disposable and flexible Selenium Grid infrastructure.
 
@@ -117,13 +108,28 @@ started, please join the #zalenium channel on [Slack](https://seleniumhq.herokua
 * Video recording, check them in the `/tmp/videos` folder (or the one you mapped when starting Zalenium)
 * Customise video file naming via capabilities, basic auth and [more](https://zalando.github.io/zalenium/#usage)
 
-## About LambdaTest
-
-[LambdaTest](https://www.lambdatest.com/) is a cloud based selenium grid infrastructure that can help you run automated cross browser compatibility tests on 2000+ different browser and operating system environments. LambdaTest supports all programming languages and frameworks that are supported with Selenium, and have easy integrations with all popular CI/CD platforms. It's a perfect solution to bring your [selenium automation testing](https://www.lambdatest.com/selenium-automation) to cloud based infrastructure that not only helps you increase your test coverage over multiple desktop and mobile browsers, but also allows you to cut down your test execution time by running tests on parallel.
 
 ## Documentation
 
 Check the complete documentation at https://zalando.github.io/zalenium/
+
+## LambdaTest is Now TestMu AI
+
+On **January 12, 2026**, [LambdaTest evolved to TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/), the world's first fully autonomous **Agentic AI Quality Engineering Platform**.
+
+Same team. Same infrastructure. Same customer accounts. All existing LambdaTest logins, scripts, capabilities, and integrations continue to work without change.
+
+👉 Find the new home for [LambdaTest](https://www.testmuai.com).
+
+### How LambdaTest Evolved into TestMu AI
+
+In 2017, we launched LambdaTest with a simple mission: make testing fast, reliable, and accessible. As LambdaTest grew, we expanded into Test Intelligence, Visual Regression Testing, Accessibility Testing, API Testing, and Performance Testing, covering the full depth of the testing lifecycle.
+
+As software development entered the AI era, testing had to evolve, too. We rebuilt the architecture to be AI-native from the ground up, with autonomous agents that **plan, author, execute, analyze, and optimize tests** while keeping humans in the loop. The platform integrates with your repos, CI, IDEs, and terminals, continuously learning from every code change and development signal.
+
+That evolution earned a new name: **TestMu AI**, built for an AI-first future of quality engineering. TestMu is not a new name for us. It is the name of our annual community conference, which has brought together 100,000+ quality engineers to discuss how AI would reshape testing, long before that became an industry norm.
+
+What started as a high-performance cloud testing platform has transformed into an AI-native, multi-agent system powering a connected, end-to-end quality layer. That evolution defined a new identity: LambdaTest evolved into TestMu AI, built for an AI-first future of quality engineering.
 
 License
 ===================
